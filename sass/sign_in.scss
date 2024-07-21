@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+}
+
+
+.left{
+    width: 50%;
+    background-color: #F3F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height: 100vh;
+  
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 100% */
+        margin-top: 40px;
+    }
+    img{
+        width: 90%;
+        height: auto;
+    }
+}
+
+.right{
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   width: 30%;
+    h1{
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px; /* 110% */
+        letter-spacing: -0.4px;
+    }
+    p{
+        font-family: Inter;
+        color: #6C7275;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        margin:24px 0 32px 0;
+        a{
+            color: var(--Green, #38CB89);
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #2c9264;
+        }
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        input{
+            width: 100%;
+            height: 35px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+        .pswd{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .eye{
+                cursor: pointer;
+            }
+        }
+        hr{
+            width: 100%;
+            margin-bottom: 32px;
+        }
+        .check{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 32px;
+            justify-content: space-between;
+            .check_form{
+                display: flex;
+                width: 50%;
+                align-items: center;
+                gap: 10px;
+                input{
+                    width: 20px;
+                    cursor: pointer;
+                    accent-color: #141718;  
+                }
+                label{
+                    color: #6C7275;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; /* 162.5% */
+                    cursor: pointer;
+                }
+            }
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: #141718;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px; /* 162.5% */
+                width: 50%;
+                text-align: end;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+    button{
+        width: 100%;
+        border-radius: 8px;
+        background: #141718;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+        letter-spacing: -0.4px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px; /* Genişlik */
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #343839; /* Scrollbar rengi */
+    border-radius: 60px; /* Kenar yuvarlatma */
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #cdcbcb; /* Scrollbar izleme bölgesi rengi */
+}
+
+
+@media screen and (max-width:768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }  
+    .left{
+        width: 100%;
+        height: 70vh;
+        margin-bottom: 10%;
+        img{
+            width: 400px;
+        }
+    }
+    .right{
+        width: 80%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+}
