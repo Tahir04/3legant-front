@@ -33,21 +33,20 @@
 
 To get a local copy up and running, follow these simple steps:
 
-1. Clone the repository
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/3legant.git
 
-```sh
-git clone https://github.com/yourusername/3legant.git
-
-2. Open the project files in your browser
-Open the homepage.html file in your browser to view the home page.
-
+2. **Open the project**
+    Open the homepage.html file in your browser to view the home page.
 
 
-## Contact
+## Contact  
+Please contact me with any questions or feedback -- [Tahir04](https://github.com/Tahir04).   
 
-Please contact me with any questions or feedback -- [Tahir04](https://github.com/Tahir04).
-
-
----
-
+---  
 Thank you for checking out 3legant!
+
+
+
+
